@@ -1,0 +1,25 @@
+.card {
+  border: solid 1px limegreen;
+  border-radius: 1rem; 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: auto;
+  padding: .5rem;
+  
+}
+
+.card__title {
+  font-weight: bold;
+  font-size: 20px;
+  
+}
+
+.card__content {
+  
+}
+
+.card__footer {
+  text-align: left;
+}
