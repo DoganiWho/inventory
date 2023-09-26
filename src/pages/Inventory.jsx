@@ -2,6 +2,7 @@ import {useState, useEffect} from 'react';
 
 import { Card } from "../components/Card/Card";
 import { Button } from "../components/Button/Button";
+import {Navbar} from "../components/Navbar/Navbar";
 import fetchData from "../api.js";
 
 import "./inventory.css"
@@ -38,6 +39,7 @@ export function Inventory() {
   return ( 
     <>
       <h1>Inventory</h1>
+      <Navbar />
       <div className="category-buttons">
           <Button
             className="category__btn"
