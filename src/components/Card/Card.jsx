@@ -1,6 +1,8 @@
 import React from "react"
 import "./card.css"
 
+import {formatCurrency} from "../../utilities/formatCurrency.js";
+
 export function Card({
   title, 
   image, 
@@ -15,7 +17,7 @@ export function Card({
       <div className="card__body" >{body} </div >
       <div className="card__footer">
         <span > #{tags} </span>
-        <span> ${details} </span>
+        <span> {formatCurrency(details)} </span>
       </div >
     </div>
   )

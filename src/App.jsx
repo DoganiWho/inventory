@@ -1,13 +1,11 @@
 import React from "react"
 
-
-import {ItemList } from "./components/ItemList/ItemList"
+import {Inventory } from "./pages/Inventory"
 
 export default function App() {
   return (
     <main>
-      <h1>Inventory</h1>
-      <ItemList />
+      <Inventory />
     </main>
   )
 }
