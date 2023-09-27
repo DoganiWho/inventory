@@ -3,3 +3,8 @@ button {
   padding: .25rem;
   margin: .25rem .12rem;
 }
+
+.button--dark {
+  background-color: #1481b8;
+  color: #FFF;
+}

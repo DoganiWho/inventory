@@ -4,6 +4,7 @@ import { Card } from "../components/Card/Card";
 import { Button } from "../components/Button/Button";
 import {Navbar} from "../components/Navbar/Navbar";
 import fetchData from "../api.js";
+import {useTheme} from "../context/ThemeContext"
 
 import "./inventory.css"
 import "../index.css"
@@ -12,6 +13,7 @@ export function Inventory() {
   const [products, setProducts] = useState([]);
   const [categories, setCategories] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);
+  const {theme, setTheme} = useTheme()
 
   useEffect(() => {
     fetchData('products')
@@ -42,21 +44,21 @@ export function Inventory() {
       <Navbar />
       <div className="category-buttons">
           <Button
-            className="category__btn"
+            className={theme? "category__btn button--dark" : "category__btn "}
             key="all"
             name="#All"
-            handleClick={() => filterProductsByCategory('all')} // Handle 'All' category separately
+            onClick={() => filterProductsByCategory('all')} // Handle 'All' category separately
           />
           {categories.map((category) => (
             <Button
-              className="category__btn"
+              className={theme? "category__btn button--dark" : "category__btn "}
               key={category}
               name={`#${category}`}
-              handleClick={() => filterProductsByCategory(category)} // Pass category to filter
+              onClick={() => filterProductsByCategory(category)} // Pass category to filter
             />
           ))}
         </div>
-      <div className="container">
+      <div className="container flex flex-wrap centered">
         
         {filteredProducts.map((item) => (
           <Card

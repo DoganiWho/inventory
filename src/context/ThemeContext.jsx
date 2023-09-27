@@ -12,7 +12,7 @@ export function ThemeContextProvider({ children }) {
   const [theme, setTheme] = useLocalStorage('theme', [])
 
   return(
-    <ThemeContext.Provider value={{ theme, setTheme}} >
+    <ThemeContext.Provider value={{ theme, setTheme }} >
       {children}
     </ThemeContext.Provider>
    )

@@ -1,5 +1,5 @@
 .card {
-  border: solid 1px limegreen;
+  border: solid 1px #1481b8;
   border-radius: 1rem; 
   display: flex;
   flex-direction: column;
@@ -7,7 +7,9 @@
   align-items: center;
   margin: 0 .5rem 1rem .5rem;
   padding: .5rem;
-  
+  max-width: 400px;
+  width: 30vw;
+  min-width: 250px;
 }
 
 .card__title {
@@ -25,6 +27,8 @@
 } 
 
 .card__image {
-  max-width: 25vw;
-  
+  width: 25vw;
+  max-width: 200px;
+  border-radius: .75rem;
+  margin: .75rem 0;
 }

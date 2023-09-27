@@ -1,8 +1,8 @@
 import "./button.css"
 
-export function Button({ handleClick, name="Button"}) {
+export function Button({ onClick, name="Button", className=""}) {
 
   return (
-    <button onClick={handleClick}>{name}</button>
+    <button className={className} onClick={onClick}>{name}</button>
   )
 }
