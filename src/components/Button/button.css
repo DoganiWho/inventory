@@ -1,7 +1,9 @@
 button {
-  border-radius: 1rem;
-  padding: .25rem;
+  border-radius: 0.75rem;
+  padding: .5rem;
   margin: .25rem .12rem;
+  border: none;
+  outline: 1px solid transparent;
 }
 
 .button--dark {
