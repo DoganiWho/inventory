@@ -2,7 +2,7 @@ import {useState, useEffect} from 'react';
 
 import { Card } from "../components/Card/Card";
 import { Button } from "../components/Button/Button";
-import {Navbar} from "../components/Navbar/Navbar";
+// import {Navbar} from "../components/Navbar/Navbar";
 import fetchData from "../api.js";
 import {useTheme} from "../context/ThemeContext"
 
@@ -41,7 +41,7 @@ export function Inventory() {
   return ( 
     <>
       <h1>Inventory</h1>
-      <Navbar />
+      {/* <Navbar /> */}
       <div className="category-buttons">
           <Button
             className={theme? "category__btn button--dark" : "category__btn "}
